@@ -101,12 +101,12 @@ while not game_over:
     if ball.rect.x > 450 or ball.rect.x < 0:
         dx *= -1
     if ball.rect.y > 350:
-        time_text = Label(150, 150, 50, 50, back)
+        time_text = Label(100, 230, 50, 50, back)
         time_text.set_text('YOU LOSE', 60, (255, 0, 0))
         time_text.draw(10, 10)
         game_over = True
     if len(monsters) == 0:
-        time_text = Label(150, 150, 50, 50, back)
+        time_text = Label(100, 230, 50, 50, back)
         time_text.set_text('YOU WIN', 60, (0, 200, 0))
         time_text.draw(10, 10)
         game_over = True
